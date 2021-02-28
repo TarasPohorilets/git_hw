@@ -35,11 +35,11 @@ print(type(dict_e))
 #Replace the placeholders with a value:
 #"Anna has ___ apples and ___ peaches."
 
-isinstance(int_a, int)
-isinstance(str_b, str)
-isinstance(set_c, set)
-isinstance(lst_d, list)
-isinstance(dict_e, dict)
+print(isinstance(int_a, int))
+print(isinstance(str_b, str))
+print(isinstance(set_c, set))
+print(isinstance(lst_d, list))
+print(isinstance(dict_e, dict))
 
 # 5. With .format and curly braces {}
 
