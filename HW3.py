@@ -55,7 +55,7 @@ print("Anna has {apples} apples and {peaches} peaches".format(apples=4, peaches=
 
 # 8*. With indicators of field size (5 chars for the first and 3 for the second)
 
-print("Anna has {0:5} apples and {1:3} peaches".format(1, 5))
+print('Anna has {0:5} apples and {1:3} peaches.'.format('one', 3))
 
 # 9. With f-strings and variables
 apples = 6
@@ -126,17 +126,14 @@ dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
 
 #14. Convert (3) to dict comprehension.
 
-dict_comprehension = {num: num **2 for num in range (1 , 11) if num % 2 }
+dict_comprehension = {num: num ** 2 for num in range (1 , 11) if num % 2 == 1}
 
 print(dict_comprehension)
 
 #15*. Convert (4) to dict comprehension.
 
-dict_comprehension_4 = {}
-for x in range(10):
-    if  x ** 3 % 4 == 0:
-        dict_comprehension_4[x] = x ** 3
-print(dict_comprehension_4)
+dict_comprehension_4 = {num: num ** 2 if num % 2 == 1 else num // 0.5  for num in range (1, 11)}
+print (dict_comprehension_4)
 
 #16. Convert (5) to regular for with if.
 
@@ -167,8 +164,11 @@ foo = lambda x, y, z: z if y < x and x > z else y
 
 #18. Convert (7) to lambda function
 
-func = lambda x, y: z if y < x and x > z else y
-print(func(3, 7))
+x = 3
+y = 7
+
+foo = lambda x, y: x if x < y else y
+print(foo(x,y))
 
 #19*. Convert (8) to regular function
 
