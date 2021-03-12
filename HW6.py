@@ -1,5 +1,5 @@
 import dataclasses
-from abc import ABC, abstractm
+from abc import ABC, abstractmethod
 
 VEGETABLES = ['Red_tomato']
 FRUITS = ['Golden']
