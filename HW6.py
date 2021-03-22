@@ -278,73 +278,17 @@ class WormPests(Pests):
 
 
 tomato_bush = TomatoBush(4)
-apple_tree = AppleTree(5)
+apple_tree = AppleTree(3)
 tom = StarGardener('Tom', [tomato_bush, apple_tree])
 state = tom.check_states
-for i in range(3):
-    tom.handling()
-pests = WormPests('Worm', 6)
+pests = WormPests('Worm', 10)
 tom.poison_pests()
 pests.eat()
 garden = Garden(vegetables=tomato_bush.tomatoes, fruits=apple_tree.apples, pests=pests, gardener=tom)
 garden.show_the_garden()
 tom.harvest()
-
-"""
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-all ok
-Gardner is working...
-Red_tomato 1 is None
-Red_tomato 2 is None
-Red_tomato 3 is None
-Red_tomato 4 is None
-Golden 0 is None
-Golden 1 is None
-Golden 2 is None
-Golden 3 is None
-Gardner is finished
-Gardner is working...
-Red_tomato 1 is None
-Red_tomato 2 is None
-Red_tomato 3 is None
-Red_tomato 4 is None
-Golden 0 is None
-Golden 1 is None
-Golden 2 is None
-Golden 3 is None
-Gardner is finished
-Gardner is working...
-Red_tomato 1 is None
-Red_tomato 2 is None
-Red_tomato 3 is None
-Red_tomato 4 is None
-Golden 0 is None
-Golden 1 is None
-Golden 2 is None
-Golden 3 is None
-Gardner is finished
-The garden has such vegetables: [Red_tomato 1 is None]
-Also garden has such fruits: [Golden 0 is None]
-And such pests: Worm is 3
-The maintainer of the garden is <__main__.StarGardener object at 0x7fd7ad1de070>
-Gardener is harvesting...
-Harvesting is finished.
-Harvesting is finished.
-
-Process finished with exit code 0
-
-"""
+if not state:
+    tom.handling()
+for i in range(3):
+    tom.handling()
+tom.harvest()
