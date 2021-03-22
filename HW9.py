@@ -289,8 +289,7 @@ def vacuum_cleaner(robot):
     robot.vacuum_cleaner()
 
 
-test_robot = VacuumRobot(50, 50, 40)
-
+test_robot = VacuumRobot(70, 60, 50)
 
 def move(robot):
     i = 5

@@ -1,0 +1,14 @@
+2021-03-23 00:10:00,531 - INFO - calling sum_func
+2021-03-23 00:10:08,129 - INFO - sum_func is successfully finished, 7, 3
+2021-03-23 00:10:08,130 - INFO - calling rem_func
+2021-03-23 00:10:11,429 - INFO - rem_func is successfully finished, 8, 5
+2021-03-23 00:10:11,429 - INFO - calling mul_func
+2021-03-23 00:10:13,944 - INFO - mul_func is successfully finished, 4, 5
+2021-03-23 00:10:13,944 - INFO - calling div_func
+2021-03-23 00:10:15,578 - INFO - div_func is successfully finished, 5, 5
+2021-03-23 00:10:15,579 - INFO - calling deg_func
+2021-03-23 00:10:17,159 - INFO - deg_func is successfully finished, 5, 5
+2021-03-23 00:10:17,159 - INFO - calling root_func
+2021-03-23 00:10:18,602 - INFO - deg_func is successfully finished, 5, 5
+2021-03-23 00:10:18,602 - INFO - calling per_func
+2021-03-23 00:10:20,455 - INFO - per_func is successfully finished, 5, 5
